@@ -349,7 +349,6 @@ class World {
 public:
 	std::string name;
 	int width = 0, height = 0, tileCount = 0, lastDroppedUid = 0;
-	std::string BOT_TOKEN = "MTAxMDkxMzYxMDQxMjg2NzY1Ng.GNfrMR.NXOEbxcmWFmZwJFJ7sXhrtCxicbcjbVlk717XM";
 
 	vector2i_t main_door_loc;
 	std::unordered_map<uint32_t, Tile> tiles;
