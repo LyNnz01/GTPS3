@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -34,7 +34,7 @@ void sendItemDataToPeer(ENetPeer* peer)
 	ENetPacket* pkt = enet_packet_create(item_data, item_data_size + 60, ENET_PACKET_FLAG_RELIABLE);
 	std::cout << "ItemDat Packet Size: " << pkt->dataLength << endl;
 	enet_peer_send(peer, 0, pkt);
-	boost::thread([=] { enet_peer_send(peer, 0, pkt); }).detach();
+	 enet_peer_send(peer, 0, pkt); 
 }
 
 void loop_worlds() {
@@ -537,7 +537,7 @@ void loop_worlds() {
 												}
 												else if (not no_gems) {
 													drop_rare_item(world, NULL, machine->target_item, x_, y_, false);
-													boost::thread([=] { gems_(NULL, world, c_, x_ * 32, y_ * 32, machine->target_item); }).detach();
+													 gems_(NULL, world, c_, x_ * 32, y_ * 32, machine->target_item); 
 
 												}
 											}
@@ -1283,7 +1283,7 @@ int main() {
 							break;
 						}
 					}
-					boost::thread([=] {loop_worlds(); }).detach();
+					loop_worlds(); 
 					if (pInfo(peer)->requestedName.empty()) {
 						if (pInfo(peer)->enter_game != 0 || pInfo(peer)->world != "") enet_peer_disconnect_later(peer, 0);
 						else {
