@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SrMotionBot.cpp" />
+    <ClCompile Include="bot.cpp" />
+    <ClCompile Include="enet\callbacks.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\compress.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\host.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\list.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\packet.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\peer.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\protocol.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\unix.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="enet\win32.c">
+      <Filter>enet</Filter>
+    </ClCompile>
+    <ClCompile Include="sandbird\sandbird.c">
+      <Filter>sandbird</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bot.h" />
+    <ClInclude Include="enet\include\callbacks.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\enet.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\list.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\protocol.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\time2.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\types.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\unix.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\utility.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="enet\include\win32.h">
+      <Filter>enet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="proton\hash.hpp">
+      <Filter>proton</Filter>
+    </ClInclude>
+    <ClInclude Include="proton\rtparam.hpp">
+      <Filter>proton</Filter>
+    </ClInclude>
+    <ClInclude Include="proton\variant.hpp">
+      <Filter>proton</Filter>
+    </ClInclude>
+    <ClInclude Include="proton\vector.hpp">
+      <Filter>proton</Filter>
+    </ClInclude>
+    <ClInclude Include="sandbird\sandbird.h">
+      <Filter>sandbird</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="taskSyncer.h" />
+    <ClInclude Include="struct.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="HTTPRequest.hpp" />
+    <ClInclude Include="httplib.h" />
+    <ClInclude Include="json.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="enet">
+      <UniqueIdentifier>{4426fa82-dece-4e2e-a8e5-b262f455015e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enet\include">
+      <UniqueIdentifier>{75110102-9dde-495b-93a4-9fc15a841682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proton">
+      <UniqueIdentifier>{bcb8dbc1-29ec-4f98-9017-0f9cb6a640ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sandbird">
+      <UniqueIdentifier>{66854b87-a9b5-43a9-9167-a465308d9ee5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
